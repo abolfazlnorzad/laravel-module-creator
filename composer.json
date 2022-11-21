@@ -1,0 +1,41 @@
+{
+    "name": "nrz/laravel-module-creator",
+    "description": "a tool for build your laravel modules",
+    "license": "MIT",
+    "homepage": "https://github.com/abolfazlnorzad/laravel-module-creator",
+    "authors": [
+        {
+            "name": "Abolfazl Norzad",
+            "email": "abolfazlnorzad78@gmail.com"
+        }
+    ],
+    "keywords": ["Laravel Module" , "Laravel" , "Module Creator"],
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nrz\\LaravelModuleCreator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nrz\\LaravelModuleCreator\\LaravelModuleCreatorServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "illuminate/support": "^9.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "^9.5"
+    }
+}
