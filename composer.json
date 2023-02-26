@@ -31,7 +31,7 @@
         }
     },
     "require": {
-        "illuminate/support": "^9.0|^10.0",
+        "illuminate/support": "^10.0",
         "ext-json": "*"
     },
     "require-dev": {
